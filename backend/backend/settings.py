@@ -57,8 +57,12 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000'
+]
+
 CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = ["http://localhost:3000", "localhost", "127.0.0.1", "http://127.0.0.1:3000"]
+CORS_ORIGIN_WHITELIST = ["http://localhost:3000", "localhost:8000", "127.0.0.1", "http://127.0.0.1:3000"]
 
 ROOT_URLCONF = 'backend.urls'
 
